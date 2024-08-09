@@ -12,32 +12,32 @@ The datasets for Cerberus have been tested on a subset derived from [FixExal](ht
 
 ├── cerberus
 │   ├── model
-│   │    ├── dataset
-│   │    │    ├── rq1_dataset.json
-│   │    │    ├── rq2_dataset.json
-│   │    │    ├── python_dataset.json
-│   │    ├── prompts
-│   │    │    ├── codepilot_main-oneshot-prompt.txt
-│   │    │    ├── cvg_prompt.txt
-│   │    │    ├── tgt_coverage_prompt.txt
-│   │    │    ├── tgt_exception_prompt.txt
-│   │    │    ├── java_cvg_prompt_instructions.txt
-│   │    │    ├── java_codepilot_oneshot-plan-prompt.txt
-│   │    │    ├── java_tgt_coverage_prompt_instructions.txt
-│   │    │    ├── java_tgt_exeception_prompt_instructions.txt
-│   │    │    ├── python_cvg_prompt_instructions.txt
-│   │    │    ├── python_codepilot_oneshot-plan-prompt.txt
-│   │    │    ├── python_tgt_coverage_prompt_instructions.txt
-│   │    │    ├── python_tgt_exeception_prompt_instructions.txt
-│   │    ├── config.yaml
-│   │    ├── fuzz.py
-│   │    ├── utils.py
-│   │    ├── java_pipeline.py
-│   │    ├── python_pipeline.py
-│   │    ├── gpt_interaction.py
+│   │   ├── dataset
+│   │   │   ├── rq1_dataset.json
+│   │   │   ├── rq2_dataset.json
+│   │   │   ├── python_dataset.json
+│   │   ├── prompts
+│   │   │   ├── codepilot_main-oneshot-prompt.txt
+│   │   │   ├── cvg_prompt.txt
+│   │   │   ├── tgt_coverage_prompt.txt
+│   │   │   ├── tgt_exception_prompt.txt
+│   │   │   ├── java_cvg_prompt_instructions.txt
+│   │   │   ├── java_codepilot_oneshot-plan-prompt.txt
+│   │   │   ├── java_tgt_coverage_prompt_instructions.txt
+│   │   │   ├── java_tgt_exeception_prompt_instructions.txt
+│   │   │   ├── python_cvg_prompt_instructions.txt
+│   │   │   ├── python_codepilot_oneshot-plan-prompt.txt
+│   │   │   ├── python_tgt_coverage_prompt_instructions.txt
+│   │   │   ├── python_tgt_exeception_prompt_instructions.txt
+│   │   ├── config.yaml
+│   │   ├── fuzz.py
+│   │   ├── utils.py
+│   │   ├── java_pipeline.py
+│   │   ├── python_pipeline.py
+│   │   ├── gpt_interaction.py
 │   ├── results
-│   │    ├── rq1_results (zipped)
-│   │    ├── rq2_results (zipped)
+│   │   ├── rq1_results (zipped)
+│   │   ├── rq2_results (zipped)
 │   └── README.md
 ```
 
