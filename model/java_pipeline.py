@@ -15,6 +15,34 @@ dataset = f"dataset/final_dataset.json"
 output_folder = "results" 
 
 def interactive_testing_pipeline(submission_id, file_path, time_limit_minutes, azure_openai_key, azure_openai_endpoint, test_gen_azure_openai_model, cov_azure_openai_model):
+    '''
+    Arguments:
+    - `submission_id` (str): Unique identifier for the fuzzing session.
+    - `file_path` (str): Path to the code file to be fuzzed.
+    - `time_limit_minutes` (int): Time limit for the fuzzing process in minutes.
+    - `azure_openai_key` (str): API key for Azure OpenAI service.
+    - `azure_openai_endpoint` (str): Endpoint URL for Azure OpenAI service.
+    - `test_gen_azure_openai_model` (str): Model name for generating test cases.
+    - `cov_azure_openai_model` (str): Model name for coverage prediction.
+
+    Function:
+    1. **Initialize Variables**:
+       - Reads the initial code and sets up variables for test case generation and coverage tracking.
+
+    2. **Start Fuzzing Loop**:
+       - Iteratively generates test cases and predictions, updating coverage status and time.
+       - **Exception Raising Phase**:
+         - Generates test seeds and mutations, updates code coverage, and checks for increased coverage.
+       - **Coverage Increase Phase**:
+         - Updates code with new coverage symbols, generates test seeds, and checks for coverage improvement.
+
+    3. **Save and Execute Results**:
+       - Saves results to a JSON file.
+       - Formats and executes the generated test cases.
+       
+    4. **Completion**:
+       - Prints completion status or error messages if no code is found.
+    '''
     initial_code = utils.read_code(file_path)
     execution_code = utils.read_code(file_path)
     if initial_code:
@@ -29,7 +57,6 @@ def interactive_testing_pipeline(submission_id, file_path, time_limit_minutes, a
         updated_code = utils.prepend_exclamation_mark(clean_altered_code)
         coverage_symbols = utils.extract_symbols(updated_code)
         code_length = len(coverage_symbols)
-        #print("Initial Coverage : ", coverage_symbols)
         start_time = time.time()
         fuzzwise_logs_json_filepath = utils.create_json_file(submission_id)
         while True:
@@ -140,32 +167,9 @@ def interactive_testing_pipeline(submission_id, file_path, time_limit_minutes, a
                 'cumulative_coverage': coverage_symbols
             }
             utils.save_cycle_response(fuzzwise_logs_json_filepath, result)
-        # print("All TEST SEEDS - ")
-        # print(generated_test_seeds)
-        generated_test_cases = ast.literal_eval(generated_test_cases)
-        formatted_test_cases = execution.format_test_cases(generated_test_cases)
-        converted_test_cases = execution.convert_to_desired_format(formatted_test_cases)
-        clean_execution_code = utils.remove_comments_and_blank_lines(execution_code)
-        print(type(converted_test_cases))
-        execution.execute_java_program(clean_execution_code, submission_id, fuzzwise_logs_json_filepath)
-        print("Execution completed", submission_id)
     else:
         print("No code found to fuzz")
     
 
-
-# with open(dataset, 'r', encoding='utf-8') as json_file:
-#     submissions_data = json.load(json_file)
-# for submission_data in submissions_data:
-#     submission_id = submission_data['submission_id']
-#     initial_code = utils.extract_initial_code(submission_id, submissions_data)
-#     execution_code = utils.extract_initial_code_for_execution(submission_id, submissions_data)
-#     if initial_code:
-#         # print(submission_id)
-#         interactive_testing_pipeline(submission_id, initial_code, execution_code)
-#     else:
-#         print(f"Initial code not found for submission ID: {submission_id}")
-
-# Read code from files
 
 
