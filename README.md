@@ -35,9 +35,9 @@ The datasets for Cerberus have been tested on a subset derived from [FixExal](ht
 │   │    ├── java_pipeline.py
 │   │    ├── python_pipeline.py
 │   │    ├── gpt_interaction.py
-│   ├── outputs
-│   │    ├── rq1_results
-│   │    ├── rq2_results
+│   ├── results
+│   │    ├── rq1_results (zipped)
+│   │    ├── rq2_results (zipped)
 │   └── README.md
 ```
 
