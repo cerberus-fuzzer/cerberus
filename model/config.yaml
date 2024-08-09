@@ -1,0 +1,11 @@
+fuzzing: 
+  language: "java"
+  code_file_path: "Main.java"
+  fuzzing_id: "test"
+  time_limit: 5  # in minutes
+
+openai_credentials:  
+  azure_openai_key: "39f437052841449ca67577a17b1f04d2"
+  azure_openai_endpoint: "https://tien.openai.azure.com/"
+  test_gen_azure_openai_model: "gpt-35"
+  cov_azure_openai_model: "gpt-4"
