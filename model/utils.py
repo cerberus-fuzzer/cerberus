@@ -14,6 +14,7 @@ def read_code(file_path):
         code = file.read()
     return code
 
+
 def extract_symbols(code):
     '''
     Arguments:
