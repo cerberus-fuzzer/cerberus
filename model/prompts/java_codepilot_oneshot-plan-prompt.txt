@@ -2,6 +2,7 @@ For the given code snippet, associated test inputs and plan, give the code cover
 > if the line is executed
 ! if the line is not executed
 Example output:
+
 > line1
 ! line2
 > line3
