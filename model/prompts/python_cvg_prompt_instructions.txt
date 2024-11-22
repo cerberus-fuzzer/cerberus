@@ -48,4 +48,3 @@ Final code coverage of the Python program based on its test case and given step 
 EXPECTED OUTPUT: Exception - ZeroDivisionError - division by zero
 
 In a similar fashion, develop a plan of step by step execution of the below code snippet and predict the code coverage and the expected output in the case of an exception or error - 
-
