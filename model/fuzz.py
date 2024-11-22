@@ -3,6 +3,7 @@ import argparse
 from java_pipeline import interactive_testing_pipeline as java_pipeline
 from python_pipeline import interactive_testing_pipeline as python_pipeline
 
+
 def cerberus_fuzz(yaml_file):
     '''
     Arguments:
