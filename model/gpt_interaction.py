@@ -43,7 +43,6 @@ def tgt_chatgpt_interaction(azure_openai_key, azure_openai_endpoint, test_gen_az
             break
     return generated_test_inputs, all_responses, temporary_storage
 
-
 def check_test_cases_generated(response):
     return "test case" in response.lower()
 
