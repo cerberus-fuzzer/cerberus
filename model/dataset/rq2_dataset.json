@@ -18,6 +18,7 @@
       "testInputOnMain": "public static void testInputOnMain(int A, int B, String S) {\n        try {\n            // Testing input on the main function\n            System.out.println(\"Testing input on main function: A=\" + A + \", B=\" + B + \", S=\" + S);\n\n            Pattern p = Pattern.compile(\"^.{\" + A + \"}-[0-9]{\" + B + \"}$\");\n            Matcher m = p.matcher(S);\n\n            if (m.find()) {\n                System.out.println(\"Yes\");\n            } else {\n                System.out.println(\"No\");\n            }\n\n        } catch (Exception e) {\n            // Catch and report any exceptions as errors\n            e.printStackTrace();\n        }\n    }"
     }
   },
+  
   {
     "source": "source",
     "lang": "java",
