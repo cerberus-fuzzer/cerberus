@@ -6,7 +6,6 @@ NullPointerException: Create a scenario where a variable is explicitly set to nu
 NumberFormatException: Input a value that cannot be parsed to the expected data type (e.g., a non-numeric string).
 ArrayIndexOutOfBoundsException or IndexOutOfBoundsException: Design input values that lead to accessing array or list indices beyond their bounds.
 
-
 Ensure the test case input is in the following format:
 Test Case Input:
 <input 1>
