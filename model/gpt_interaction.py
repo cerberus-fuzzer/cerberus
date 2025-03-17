@@ -82,6 +82,7 @@ def ccp_chatgpt_interaction(azure_openai_key, azure_openai_endpoint, cov_azure_o
             break
     return assistant_response
 
+# check all coverage symbols from response
 def check_all_coverage_symbols_gt(response):
     coverage_symbols = utils.extract_symbols(response)
     return all(symbol == '>' for symbol in coverage_symbols)
