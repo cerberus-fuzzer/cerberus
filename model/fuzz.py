@@ -59,5 +59,5 @@ if __name__ == "__main__":
     # Parse arguments
     args = parser.parse_args()
     
-    # Run fuzzer with the provided YAML file
+    # Run fuzzer with the provided YAML file with format - 'python fuzz.py --config.yaml'
     cerberus_fuzz(args.yaml_file_path)
