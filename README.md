@@ -38,6 +38,9 @@ The datasets for Cerberus have been tested on a subset derived from [FixExal](ht
 │   ├── results
 │   │   ├── rq1_results (zipped)
 │   │   ├── rq2_results (zipped)
+│   │   ├── rq5_results (zipped)
+│   │   |    ├── results for buggy s/o dataset
+│   │   |    ├── results for non-buggy s/o dataset
 │   ├── motivation results
 │   │   ├── vanilla prompting results (4 json files)
 │   └── README.md
