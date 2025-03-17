@@ -1,3 +1,4 @@
+test
 For the given code snippet, associated test inputs and plan, give the code coverage that follows the plan. The code coverage indicates whether a statement has been executed or not. 
 > if the line is executed
 ! if the line is not executed
