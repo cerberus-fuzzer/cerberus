@@ -1,11 +1,11 @@
-## Cerberus: Coverage-guided, Execution-free Fuzz Testing for Code Snippets
+## Cerberus: Static Detection of Runtime Errors with Multi-Agent Reasoning and Coverage-Guided Exploration
 
-<p align="justify">Studies have identified numerous vulnerable code snippets in online forums, many of which have been incorporated into popular open-source projects. Early detection of runtime errors and defects in these code snippets is vital to avoid costly fixes later in the development cycle. However, this task is challenging due to the incomplete and non-executable nature of the code snippets. In this paper, we propose Cerberus, a novel predictive coverage-guided fuzz testing framework. Cerberus simulates the process of fuzzing by generating the inputs that trigger runtime errors and performs code coverage prediction and error detection without actual code execution. The fuzzing process generates coverage-increasing and error-triggering inputs, while the code coverage prediction and error detection enable Cerberus to fuzz incomplete and non-executable code snippets effectively. Our empirical evaluation demonstrates that Cerberus performs better than conventional and learning-based fuzz testing frameworks for (in)complete code snippets by efficiently generating test cases with higher coverage, resulting in the detection of more runtime errors.</p>
+<p align="justify">In several software development scenarios, it is desirable to detect runtime errors and exceptions in code snippets without actual execution. A typical example is to detect runtime exceptions in online code snippets before integrating them into a codebase. In this paper, we propose Cerberus, a novel predictive, execution-free coverage-guided testing framework. Inspired by the process of fuzz testing, we use LLMs to generate the inputs that trigger runtime errors and to perform code coverage prediction and error detection without code execution. With a two-phase feedback loop, Cerberus first focuses on increasing code coverage and then shifts to detecting runtime errors, enabling it to fuzz better than not just traditional fuzzers, but also simulation of such processes. Furthermore, our empirical evaluation demonstrates that Cerberus performs better than conventional and learning-based fuzz testing frameworks for (in)complete code snippets by generating high-coverage test cases more efficiently, leading to the discovery of more runtime errors.</p>
 
 ### Dataset
 All data for reproducing the results is available in the in the dataset folder.
 
-The datasets for Cerberus have been tested on a subset derived from [FixExal](https://arxiv.org/abs/2206.07796)
+The datasets for Cerberus have been tested on a subset derived from [FixExal](https://arxiv.org/abs/2206.07796) and [StackOverflow]
 
 ### Folder Structure 
 ```
