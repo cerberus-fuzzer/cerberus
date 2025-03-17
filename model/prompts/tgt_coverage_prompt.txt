@@ -1,0 +1,33 @@
+Generate a single test case without an exaplnation or any additional information for a Java program to cover uncovered lines of code denoted by '!'. Provide only the test input without explanations. Consider various conditions, edge cases, and typical use cases.
+Ensure the test case input is in the following format:
+Test Case Input:
+<input 1>
+<input 2>...
+JAVA PROGRAM:
+! public class foo {
+! public static boolean matches(String text, String glob) {
+! String rest = null;
+! int pos = glob.indexOf('*');
+! if (pos != -1) {
+! rest = glob.substring(pos + 1);
+! glob = glob.substring(0, pos);
+! }
+! if (glob.length() > text.length())
+! return false;
+! // handle the part up to the first *
+! for (int i = 0; i < glob.length(); i++)
+! if (glob.charAt(i) != '?' 
+! && !glob.substring(i, i + 1).equalsIgnoreCase(text.substring(i, i + 1)))
+! return false;
+! // recurse for the part after the first *, if any
+! if (rest == null) {
+! return glob.length() == text.length();
+! } else {
+! for (int i = glob.length(); i <= text.length(); i++) {
+! if (matches(text.substring(i), rest))
+! return true;
+! }
+! return false;
+! }
+! }
+! }
