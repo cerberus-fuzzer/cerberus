@@ -1,5 +1,5 @@
 [
-    {},{
+    {
         "submission_id": "s005911119",
         "incomplete_code": "public class Main{\n\tpublic static void main(String[] args){\n\t\tScanner stdIn = new Scanner(System.in);\n\t\tint n = stdIn.nextInt();\n\t\tint count = 0;\n\t\tif( n >= 2 )\n\t\t\tcount++;\n\t\tif( n >= 3 )\n\t\t\tcount++;\n\t\tint[] p = new int[n];\n\t\tp[0] = 2;\n\t\tp[1] = 3;\n\t\tfor(int i = 5; i <= n; i += 2){\n\t\t\tfor(int j =1; j < count; j ++){\n\t\t\t\tif( i % p[j] == 0 ){\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t\telse if ( p[j] > Math.sqrt(i) ){\n\t\t\t\t\tp[count] = i;\n\t\t\t\t\tcount++;\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tSystem.out.println(count);\n\t}\n}",
         "lines_of_code": 28,
