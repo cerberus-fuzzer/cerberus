@@ -8,4 +8,4 @@ openai_credentials:
   azure_openai_key: #OPENAI KEY
   azure_openai_endpoint: #OPENAI ENDPOINT
   test_gen_azure_openai_model: #GPT MODEL FOR TEST CASE GENERATION (RECOMMENDED GPT 3.5)
-  cov_azure_openai_model: #GPT MODEL FOR CODEPILOT+ COVERAGE PREDICTION AND ERROR DETECTION (RECOMMENDED GPT 4.0)
+  cov_azure_openai_model: #GPT MODEL FOR CODEPILOT+ COVERAGE PREDICTION AND ERROR DETECTION (RECOMMENDED GPT 4o)
