@@ -11,5 +11,3 @@ Test Case Input:
 <input 1>
 <input 2>...
 Generate a single test case without providing an explanation or any additional information for the below Java program:
-
-
