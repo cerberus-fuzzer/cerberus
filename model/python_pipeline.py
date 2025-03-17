@@ -116,7 +116,7 @@ def interactive_testing_pipeline(submission_id, file_path, time_limit_minutes, a
                 if min_length < code_length:
                     coverage_symbols[min_length:code_length] = ['>' for _ in range(min_length, code_length)]
             else:
-                print("Prompt#2 : Increase Coverage")
+                print("Prompt #2 : Increase Coverage")
                 updated_code = utils.add_coverage_symbols_to_code(clean_altered_code, coverage_symbols)
                 tgt_prompt_text = utils.add_updated_code(tgt_coverage_prompt_instructions_text, updated_code)  # removed generated_test_seeds
                 with open(tgt_coverage_prompt_path, 'a', encoding='utf-8') as tgt_file:
