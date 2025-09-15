@@ -36,4 +36,4 @@ When this snippet was fuzzed with **Cerberus**, it generated the following YouTu
 
 ### Conclusion
 
-This case study illustrates that **Cerberus** can effectively handle incomplete or buggy code snippets. By leveraging pre-trained knowledge, **LLMs** can reason about API behaviors even in the presence of errors at the initial execution stage. Traditional fuzzers that rely solely on execution fail in such scenarios.
+This case study illustrates that **Cerberus** can effectively handle incomplete or buggy code snippets. By leveraging pre-trained knowledge, **Large Language Models** can reason about API behaviors even in the presence of errors at the initial execution stage. Traditional fuzzers that rely solely on execution fail in such scenarios.
