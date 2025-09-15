@@ -29,7 +29,7 @@ def cerberus_fuzz(yaml_file):
     with open(yaml_file, 'r') as file:
         config = yaml.safe_load(file)
     
-    # Extract fuzzing-related values from YAML
+    # Extract fuzzing-related values from YAML file
     fuzzing_config = config.get('fuzzing', {})
     language = fuzzing_config.get('language')
     code_file_path = fuzzing_config.get('code_file_path')
@@ -61,3 +61,4 @@ if __name__ == "__main__":
     
     # Run fuzzer with the provided YAML file with format - 'python fuzz.py --config.yaml'
     cerberus_fuzz(args.yaml_file_path)
+
