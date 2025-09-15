@@ -13,6 +13,8 @@ SystemError: Raised when the interpreter finds an internal error.
 Ensure the test case input is in the following format:
 Test Case Input:
 <input 1>
-<input 2>...
+<input 2>
+...
 
 Generate the test case without providing any explanation or additional information for the Python program below:
+
