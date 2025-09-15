@@ -9,7 +9,8 @@ ArrayIndexOutOfBoundsException or IndexOutOfBoundsException: Design input values
 Ensure the test case input is in the following format:
 Test Case Input:
 <input 1>
-<input 2>...
+<input 2>
+...
 Generate a single test case without providing an explanation or any additional information for the below Java program:
 
 JAVA PROGRAM:
@@ -106,3 +107,4 @@ public class Main {
                 return strNum;
         }
 }
+
