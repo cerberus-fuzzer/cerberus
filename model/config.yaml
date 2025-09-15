@@ -1,6 +1,6 @@
 fuzzing: 
   language: "java" #CURRENTLY SUPPORTED LANGUAGES - JAVA & PYTHON
-  code_file_path: #SOURCE CODE LOCATION FILE PATH
+  code_file_path: #FILE PATH FOR SOURCE CODE LOCATION 
   fuzzing_id: "test"
   time_limit: 5  # in minutes
 
@@ -9,3 +9,4 @@ openai_credentials:
   azure_openai_endpoint: #OPENAI ENDPOINT
   test_gen_azure_openai_model: #GPT MODEL FOR TEST CASE GENERATION (RECOMMENDED GPT 3.5)
   cov_azure_openai_model: #GPT MODEL FOR CODEPILOT+ COVERAGE PREDICTION AND ERROR DETECTION (RECOMMENDED GPT 4o)
+
