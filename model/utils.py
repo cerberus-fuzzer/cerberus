@@ -190,7 +190,7 @@ def create_json_file(submission_id):
 def save_cycle_response(json_filepath, response):
     '''
     Arguments:
-    - `json_filepath` (str): Path to the JSON file.
+    - json_filepath (str): Path to the JSON file.
     - `response` (dict): Cycle response data.
 
     Function:
@@ -214,4 +214,5 @@ def save_java_execution_output(submission_id, output):
     output_filepath = f"results/{submission_id}_output.txt"
     with open(output_filepath, 'w', encoding='utf-8') as output_file:
         output_file.write(output)
+
 
