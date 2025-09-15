@@ -1,3 +1,4 @@
+#Code is subject to change if Azure Credentials format is different
 import utils
 import os, re, random
 from openai import AzureOpenAI
@@ -86,4 +87,5 @@ def ccp_chatgpt_interaction(azure_openai_key, azure_openai_endpoint, cov_azure_o
 def check_all_coverage_symbols_gt(response):
     coverage_symbols = utils.extract_symbols(response)
     return all(symbol == '>' for symbol in coverage_symbols)
+
 
