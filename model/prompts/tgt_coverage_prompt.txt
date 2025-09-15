@@ -2,7 +2,8 @@ Generate a single test case without an exaplnation or any additional information
 Ensure the test case input is in the following format:
 Test Case Input:
 <input 1>
-<input 2>...
+<input 2>
+...
 JAVA PROGRAM:
 ! public class foo {
 ! public static boolean matches(String text, String glob) {
@@ -31,3 +32,4 @@ JAVA PROGRAM:
 ! }
 ! }
 ! }
+
